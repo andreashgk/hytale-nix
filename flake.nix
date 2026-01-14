@@ -23,12 +23,25 @@
 
         targetPkgs =
           p: with p; [
+            # Launcher
             libsoup_3
             gdk-pixbuf
             glib
             gtk3
             webkitgtk_4_1
+
+            # Game
+            alsa-lib
+            icu
+            libGL
+            openssl
+            udev
+            xorg.libX11
+            xorg.libXcursor
+            xorg.libXrandr
+            xorg.libXi
           ];
+
         runScript = "${hytale-launcher-bin}/hytale-launcher";
       };
     };
