@@ -8,4 +8,3 @@ nix run github:andreashgk/hytale-nix#hytale-launcher
 
 This package currently breaks whenever there is an update available.
 When I find a way to disable auto-updating for the launcher I will include this here.
-For now, try nix-alien to run this package.
