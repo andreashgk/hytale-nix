@@ -42,6 +42,12 @@
             xorg.libXi
           ];
 
+        profile = ''
+          # This apparently fixes the launcher for some users.
+          # https://github.com/andreashgk/hytale-nix/issues/3
+          export XDG_CURRENT_DESKTOP="GNOME"
+        '';
+
         runScript = "${hytale-launcher-bin}/hytale-launcher";
       };
     };
