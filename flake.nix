@@ -8,10 +8,10 @@
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
-      version = "2026.01.29-a86a538";
+      version = "2026.02.02-abc3fcb";
       hytale-launcher-bin = pkgs.fetchzip {
         url = "https://launcher.hytale.com/builds/release/linux/amd64/hytale-launcher-${version}.zip";
-        sha256 = "sha256-jsD3EjPPG9zlD7C/Sjklkl4QmigpbK2njqToyfXRYkA=";
+        sha256 = "sha256-lIjkDDa8svCwG6RpiGMdZ0ySIhkq3/MD3d86gkkqygI=";
       };
     in
     {
