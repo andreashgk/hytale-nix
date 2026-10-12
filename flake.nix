@@ -41,12 +41,12 @@
             alsa-lib
             icu
             libGL
+            libX11
+            libXcursor
+            libXrandr
+            libXi
             openssl
             udev
-            xorg.libX11
-            xorg.libXcursor
-            xorg.libXrandr
-            xorg.libXi
           ];
 
         runScript = "${hytale-launcher-bin}/hytale-launcher";
