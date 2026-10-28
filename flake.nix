@@ -8,10 +8,10 @@
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
-      version = "2026.10.23-53cde5e";
+      version = "2026.10.26-7b63bde";
       hytale-launcher-zip = pkgs.fetchurl {
         url = "https://launcher.hytale.com/builds/release/linux/amd64/hytale-launcher-${version}.zip";
-        sha256 = "7df1351b38a6ae0bcf5d9a681c10911fe305a0ee708edf3f1323fb3242755c9e";
+        sha256 = "480a38a95b33c9ed0f303abf49c0fad836378a56f169e46287ceedaa7e5c01b1";
       };
       # The zip is prefixed with a signed update header that `unzip` rejects, bsdtar skips it.
       hytale-launcher-bin = pkgs.runCommand "hytale-launcher-bin-${version}" {
